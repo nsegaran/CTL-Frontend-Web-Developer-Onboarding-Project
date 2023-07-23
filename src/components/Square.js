@@ -1,10 +1,13 @@
 import React from "react";
 
-const Square = (/*{ parameters }*/) => {
+// TODO: how can I integrate the X and O class here? Where do I define?
+// square component
+
+const Square = ({value, onClick}) => {
   return (
-    <>
-    // TODO: Create a clickable square that can contain an X or O
-    </>
+    <button className={value !== " " ? "squares symbol" : "squares"}
+    onClick= {onClick}
+    > {value} </button>
   );
 };
 
