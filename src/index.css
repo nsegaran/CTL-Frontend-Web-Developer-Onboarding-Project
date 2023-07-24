@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 :root { --color: rgb(128,196,132); }
 
-.info-wrapper button:hover { background: #bfbfbf}
+.info-wrapper button:hover { background: #bfbfbf; border-color: #bfbfbf}
 
 body {
   background-color: var(--color);
@@ -41,7 +41,7 @@ body {
   cursor: pointer;
   outline: none;
   border-radius: 1.25rem;
-  text-align: left
+  text-align: center
 }
 
 @keyframes fadeInOpacity { 0% { opacity: 0; } 100% { opacity: 1; } }
@@ -50,6 +50,7 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
 .symbol { 
   opacity: 1; 
   animation-name: fadeInOpacity; 
