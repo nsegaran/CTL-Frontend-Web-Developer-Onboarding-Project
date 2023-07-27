@@ -1,10 +1,12 @@
 import React from "react";
 
-const Square = (/*{ parameters }*/) => {
+// square component
+const Square = ({value, onClick}) => {
   return (
-    <>
-    // TODO: Create a clickable square that can contain an X or O
-    </>
+    // if square is being clicked by user, use symbol class to change opacity
+    <button className={value !== " " ? "squares symbol" : "squares"}
+    onClick= {onClick}
+    > {value} </button>
   );
 };
 
